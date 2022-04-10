@@ -32,7 +32,7 @@ import ListView, { FilterOperator, Filters } from 'src/components/ListView';
 import { commonMenuData } from 'src/views/CRUD/data/common';
 import ImportModelsModal from 'src/components/ImportModal/index';
 import handleResourceExport from 'src/utils/export';
-import { ExtentionConfigs } from 'src/views/components/types';
+import { ExtensionConfigs } from 'src/views/components/types';
 import { UserWithPermissionsAndRoles } from 'src/types/bootstrapTypes';
 import DatabaseModal from './DatabaseModal';
 
@@ -114,7 +114,7 @@ function DatabaseList({ addDangerToast, addSuccessToast }: DatabaseListProps) {
     COLUMNAR_EXTENSIONS,
     EXCEL_EXTENSIONS,
     ALLOWED_EXTENSIONS,
-  } = useSelector<any, ExtentionConfigs>(state => state.common.conf);
+  } = useSelector<any, ExtensionConfigs>(state => state.common.conf);
 
   const openDatabaseImportModal = () => {
     showImportModal(true);
