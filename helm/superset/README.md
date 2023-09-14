@@ -92,7 +92,7 @@ helm install my-superset superset/superset
 | init.createAdmin | bool | `true` |  |
 | init.enabled | bool | `true` |  |
 | init.initContainers | list | a container waiting for postgres | List of initContainers |
-| init.initscript | string | a script to create admin user and initailize roles | A Superset init script |
+| init.initscript | string | a script to create admin user and initialize roles | A Superset init script |
 | init.jobAnnotations."helm.sh/hook" | string | `"post-install,post-upgrade"` |  |
 | init.jobAnnotations."helm.sh/hook-delete-policy" | string | `"before-hook-creation"` |  |
 | init.loadExamples | bool | `false` |  |
