@@ -2135,7 +2135,7 @@
             "type": "string"
           },
           "query_context_generation": {
-            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modfiedstate.",
+            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modifiedstate.",
             "nullable": true,
             "type": "boolean"
           },
@@ -2237,7 +2237,7 @@
             "type": "string"
           },
           "query_context_generation": {
-            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modfiedstate.",
+            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modifiedstate.",
             "nullable": true,
             "type": "boolean"
           },
@@ -2953,7 +2953,7 @@
             "type": "string"
           },
           "query_context_generation": {
-            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modfiedstate.",
+            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modifiedstate.",
             "nullable": true,
             "type": "boolean"
           },
@@ -3055,7 +3055,7 @@
             "type": "string"
           },
           "query_context_generation": {
-            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modfiedstate.",
+            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modifiedstate.",
             "nullable": true,
             "type": "boolean"
           },
