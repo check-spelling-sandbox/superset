@@ -641,7 +641,7 @@
       "CacheInvalidationRequestSchema": {
         "properties": {
           "datasource_uids": {
-            "description": "The uid of the dataset/datasource this new chart will use. A complete datasource identification needs `datasouce_uid` ",
+            "description": "The uid of the dataset/datasource this new chart will use. A complete datasource identification needs `datasource_uid` ",
             "items": {
               "type": "string"
             },
@@ -2084,7 +2084,7 @@
             "type": "array"
           },
           "datasource_id": {
-            "description": "The id of the dataset/datasource this new chart will use. A complete datasource identification needs `datasouce_id` and `datasource_type`.",
+            "description": "The id of the dataset/datasource this new chart will use. A complete datasource identification needs `datasource_id` and `datasource_type`.",
             "type": "integer"
           },
           "datasource_name": {
@@ -2135,7 +2135,7 @@
             "type": "string"
           },
           "query_context_generation": {
-            "description": "The query context generation represents whether the query_contextis user generated or not so that it does not update user modfiedstate.",
+            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modifiedstate.",
             "nullable": true,
             "type": "boolean"
           },
@@ -2189,7 +2189,7 @@
             "type": "array"
           },
           "datasource_id": {
-            "description": "The id of the dataset/datasource this new chart will use. A complete datasource identification needs `datasouce_id` and `datasource_type`.",
+            "description": "The id of the dataset/datasource this new chart will use. A complete datasource identification needs `datasource_id` and `datasource_type`.",
             "nullable": true,
             "type": "integer"
           },
@@ -2237,7 +2237,7 @@
             "type": "string"
           },
           "query_context_generation": {
-            "description": "The query context generation represents whether the query_contextis user generated or not so that it does not update user modfiedstate.",
+            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modifiedstate.",
             "nullable": true,
             "type": "boolean"
           },
@@ -2902,7 +2902,7 @@
             "type": "array"
           },
           "datasource_id": {
-            "description": "The id of the dataset/datasource this new chart will use. A complete datasource identification needs `datasouce_id` and `datasource_type`.",
+            "description": "The id of the dataset/datasource this new chart will use. A complete datasource identification needs `datasource_id` and `datasource_type`.",
             "type": "integer"
           },
           "datasource_name": {
@@ -2953,7 +2953,7 @@
             "type": "string"
           },
           "query_context_generation": {
-            "description": "The query context generation represents whether the query_contextis user generated or not so that it does not update user modfiedstate.",
+            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modifiedstate.",
             "nullable": true,
             "type": "boolean"
           },
@@ -3007,7 +3007,7 @@
             "type": "array"
           },
           "datasource_id": {
-            "description": "The id of the dataset/datasource this new chart will use. A complete datasource identification needs `datasouce_id` and `datasource_type`.",
+            "description": "The id of the dataset/datasource this new chart will use. A complete datasource identification needs `datasource_id` and `datasource_type`.",
             "nullable": true,
             "type": "integer"
           },
@@ -3055,7 +3055,7 @@
             "type": "string"
           },
           "query_context_generation": {
-            "description": "The query context generation represents whether the query_contextis user generated or not so that it does not update user modfiedstate.",
+            "description": "The query context generation represents whether the query_context is user generated or not so that it does not update user modifiedstate.",
             "nullable": true,
             "type": "boolean"
           },
@@ -8304,7 +8304,7 @@
             "type": "string"
           },
           "working_timeout": {
-            "description": "If an alert is staled at a working state, how long until it's state is reseted to error",
+            "description": "If an alert is staled at a working state, how long until it's state is reset to error",
             "example": 3600,
             "minimum": 1,
             "type": "integer"
@@ -9037,7 +9037,7 @@
             "type": "string"
           },
           "working_timeout": {
-            "description": "If an alert is staled at a working state, how long until it's state is reseted to error",
+            "description": "If an alert is staled at a working state, how long until it's state is reset to error",
             "example": 3600,
             "minimum": 1,
             "nullable": true,
@@ -14045,7 +14045,7 @@
     },
     "/api/v1/dashboard/permalink/{key}": {
       "get": {
-        "description": "Retrives dashboard state associated with a permanent link.",
+        "description": "Retrieves dashboard state associated with a permanent link.",
         "parameters": [
           {
             "in": "path",
@@ -15238,7 +15238,7 @@
         ]
       },
       "get": {
-        "description": "Retrives a value.",
+        "description": "Retrieves a value.",
         "parameters": [
           {
             "in": "path",
@@ -18496,7 +18496,7 @@
         ]
       },
       "get": {
-        "description": "Retrives a form_data.",
+        "description": "Retrieves a form_data.",
         "parameters": [
           {
             "in": "path",
@@ -18680,7 +18680,7 @@
     },
     "/api/v1/explore/permalink/{key}": {
       "get": {
-        "description": "Retrives chart state associated with a permanent link.",
+        "description": "Retrieves chart state associated with a permanent link.",
         "parameters": [
           {
             "in": "path",
