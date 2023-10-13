@@ -178,6 +178,7 @@ Understanding the Superset Points of View
 	- [Introduction to the Superset API](https://preset.io/events/introduction-to-the-superset-api/)
 	- [Building a Database Connector for Superset](https://preset.io/events/2021-02-16-building-a-database-connector-for-superset/)
 
+
 - Visualizations
   - [Creating Viz Plugins](https://superset.apache.org/docs/contributing/creating-viz-plugins/)
   - [Managing and Deploying Custom Viz Plugins](https://medium.com/nmc-techblog/apache-superset-manage-custom-viz-plugins-in-production-9fde1a708e55)

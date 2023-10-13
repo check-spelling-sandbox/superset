@@ -68,7 +68,7 @@ helm install my-superset superset/superset
 | extraVolumeMounts | list | `[]` |  |
 | extraVolumes | list | `[]` |  |
 | fullnameOverride | string | `nil` | Provide a name to override the full names of resources |
-| hostAliases | list | `[]` | Custom hostAliases for all superset pods |
+| hostAliases | list | `[]` | Custom hostAliases for all superset pods # https://kubernetes.io/docs/tasks/network/customize-hosts-file-for-pods/ |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"apachesuperset.docker.scarf.sh/apache/superset"` |  |
 | image.tag | string | `""` |  |
@@ -112,7 +112,7 @@ helm install my-superset superset/superset
 | runAsUser | int | `0` | User ID directive. This user must have enough permissions to run the bootstrap script Running containers as root is not recommended in production. Change this to another UID - e.g. 1000 to be more secure |
 | service.annotations | object | `{}` |  |
 | service.loadBalancerIP | string | `nil` |  |
-| service.nodePort.http | string | `"nil"` | (int) |
+| service.nodePort.http | int | `"nil"` |  |
 | service.port | int | `8088` |  |
 | service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations | object | `{}` |  |
@@ -157,7 +157,7 @@ helm install my-superset superset/superset
 | supersetCeleryFlower.resources | object | `{}` | Resource settings for the CeleryBeat pods - these settings overwrite might existing values from the global resources object defined above. |
 | supersetCeleryFlower.service.annotations | object | `{}` |  |
 | supersetCeleryFlower.service.loadBalancerIP | string | `nil` |  |
-| supersetCeleryFlower.service.nodePort.http | string | `"nil"` | (int) |
+| supersetCeleryFlower.service.nodePort.http | int | `"nil"` |  |
 | supersetCeleryFlower.service.port | int | `5555` |  |
 | supersetCeleryFlower.service.type | string | `"ClusterIP"` |  |
 | supersetCeleryFlower.startupProbe.failureThreshold | int | `60` |  |
@@ -248,7 +248,7 @@ helm install my-superset superset/superset
 | supersetWebsockets.resources | object | `{}` |  |
 | supersetWebsockets.service.annotations | object | `{}` |  |
 | supersetWebsockets.service.loadBalancerIP | string | `nil` |  |
-| supersetWebsockets.service.nodePort.http | string | `"nil"` | (int) |
+| supersetWebsockets.service.nodePort.http | int | `"nil"` |  |
 | supersetWebsockets.service.port | int | `8080` |  |
 | supersetWebsockets.service.type | string | `"ClusterIP"` |  |
 | supersetWebsockets.startupProbe.failureThreshold | int | `60` |  |
